@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sachin | Digital Portfolio</title>
+
+  <!-- SEO / Social -->
+  <meta name="description" content="Digital portfolio of Sachin — Web Developer, Python Programmer, and Problem Solver." />
+  <meta property="og:title" content="Sachin | Digital Portfolio" />
+  <meta property="og:description" content="Projects, skills, resume, and contact." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header / Navbar -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand__logo" aria-hidden="true">S</span>
+        <span class="brand__text">Sachin</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="siteNav" class="site-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="themeToggle" class="btn icon-btn" aria-label="Toggle theme" title="Toggle theme">
+            <span class="icon-moon" aria-hidden="true"></span>
+          </button>
+          <a class="btn primary" href="assets/Sachin_Resume.pdf" download>Download Resume</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="section hero" aria-label="Introduction">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1 class="hero__title">Sachin <span class="accent">— Web Developer</span></h1>
+          <p class="hero__subtitle">I build fast, accessible, and elegant web experiences using HTML, CSS, JavaScript, and Python.</p>
+          <div class="hero__cta">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn ghost" href="#contact">Let’s Talk</a>
+          </div>
+          <ul class="hero__stats" aria-label="Highlights">
+            <li><strong>15+</strong><span>Projects</span></li>
+            <li><strong>3+</strong><span>Years Learning</span></li>
+            <li><strong>100%</strong><span>On-time Delivery</span></li>
+          </ul>
+        </div>
+        <div class="hero__media">
+          <div class="avatar-ring" aria-hidden="true">
+            <img src="assets/profile.jpg" alt="Portrait of Sachin" class="avatar" />
+          </div>
+          <div class="badge">Open to Work</div>
+        </div>
+      </div>
+      <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about" aria-labelledby="aboutHeading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="aboutHeading" class="section-title">About Me</h2>
+          <p class="section-subtitle">A quick snapshot of who I am and what I do.</p>
+        </div>
+        <div class="about__grid">
+          <article class="about__card">
+            <h3>Background</h3>
+            <p>I’m a web developer focused on building responsive and accessible interfaces. I love clean UI, semantic HTML, and performant JavaScript. Recently, I’ve been exploring component-driven design and vanilla JS patterns.</p>
+            <ul class="list">
+              <li>Location: India</li>
+              <li>Education: B.Sc. Computer Science (2022–2025)</li>
+              <li>Interests: Frontend, Python, Databases</li>
+            </ul>
+          </article>
+          <article class="about__card">
+            <h3>What I’m good at</h3>
+            <ul class="chips">
+              <li>Semantic HTML</li><li>Modern CSS</li><li>JavaScript (ES6+)</li>
+              <li>Responsive Design</li><li>Accessibility (a11y)</li><li>Git & GitHub</li>
+              <li>Python Basics</li><li>MySQL</li>
+            </ul>
+            <div class="btn-row">
+              <a class="btn" href="#skills">See Skills</a>
+              <a class="btn ghost" href="#projects">View Work</a>
+            </div>
+          </article>
+          <article class="about__card">
+            <h3>Highlights</h3>
+            <ul class="timeline">
+              <li><span>2025</span> Built a modular portfolio framework with filters & modals</li>
+              <li><span>2024</span> Internship @ ABC Tech — Frontend + API integration</li>
+              <li><span>2023</span> Freelance sites for SMBs (mobile-first)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills" aria-labelledby="skillsHeading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="skillsHeading" class="section-title">Skills</h2>
+          <p class="section-subtitle">Some tools and technologies I use regularly.</p>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <ul class="skill-bars" role="list">
+              <li>
+                <div class="label"><span>HTML</span><span class="num">95%</span></div>
+                <div class="bar"><span style="--val:95%"></span></div>
+              </li>
+              <li>
+                <div class="label"><span>CSS</span><span class="num">92%</span></div>
+                <div class="bar"><span style="--val:92%"></span></div>
+              </li>
+              <li>
+                <div class="label"><span>JavaScript</span><span class="num">85%</span></div>
+                <div class="bar"><span style="--val:85%"></span></div>
+              </li>
+              <li>
+                <div class="label"><span>Python</span><span class="num">70%</span></div>
+                <div class="bar"><span style="--val:70%"></span></div>
+              </li>
+              <li>
+                <div class="label"><span>MySQL</span><span class="num">65%</span></div>
+                <div class="bar"><span style="--val:65%"></span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cards">
+            <article class="card feature">
+              <h3>Performance First</h3>
+              <p>Minified assets, lazy loading, and best practices to keep Lighthouse scores high.</p>
+            </article>
+            <article class="card feature">
+              <h3>Accessible by Design</h3>
+              <p>Keyboard navigation, ARIA roles, focus states, and color-contrast checks.</p>
+            </article>
+            <article class="card feature">
+              <h3>Maintainable</h3>
+              <p>Modular CSS, utility classes, and clean JS patterns for long-term growth.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects" aria-labelledby="projectsHeading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="projectsHeading" class="section-title">Projects</h2>
+          <p class="section-subtitle">Filter by category and click a card to preview details.</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="frontend" role="tab">Frontend</button>
+          <button class="filter-btn" data-filter="python" role="tab">Python</button>
+          <button class="filter-btn" data-filter="database" role="tab">Database</button>
+        </div>
+
+        <div class="project-grid">
+          <!-- Card 1 -->
+          <article class="project-card" data-category="frontend" tabindex="0" aria-label="Portfolio Website project">
+            <img src="assets/projects/portfolio.jpg" alt="Screenshot of portfolio website" />
+            <div class="project-body">
+              <h3>Portfolio Website</h3>
+              <p>Responsive multi-section portfolio with dark mode, filters, and animations.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+              <div class="links">
+                <a href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener">Code</a>
+                <a href="#" aria-disabled="true">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card" data-category="frontend" tabindex="0" aria-label="Task Manager project">
+            <img src="assets/projects/todo.jpg" alt="Task manager app UI" />
+            <div class="project-body">
+              <h3>Task Manager</h3>
+              <p>Vanilla JS to-do app with LocalStorage, filters, and keyboard support.</p>
+              <div class="tags"><span>JS</span><span>LocalStorage</span></div>
+              <div class="links">
+                <a href="https://github.com/yourusername/task-manager" target="_blank" rel="noopener">Code</a>
+                <a href="#" aria-disabled="true">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card" data-category="python" tabindex="0" aria-label="Weather CLI project">
+            <img src="assets/projects/weather.jpg" alt="Weather app illustration" />
+            <div class="project-body">
+              <h3>Weather CLI</h3>
+              <p>Python script fetching real-time weather and printing clean summaries.</p>
+              <div class="tags"><span>Python</span><span>API</span></div>
+              <div class="links">
+                <a href="https://github.com/yourusername/weather-cli" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="project-card" data-category="database" tabindex="0" aria-label="Student DB project">
+            <img src="assets/projects/studentdb.jpg" alt="Database ER diagram mock" />
+            <div class="project-body">
+              <h3>Student DB</h3>
+              <p>CRUD app using Python + MySQL with simple CLI and schema migrations.</p>
+              <div class="tags"><span>Python</span><span>MySQL</span></div>
+              <div class="links">
+                <a href="https://github.com/yourusername/student-database" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="project-card" data-category="frontend" tabindex="0" aria-label="Landing page project">
+            <img src="assets/projects/landing.jpg" alt="Landing page hero mock" />
+            <div class="project-body">
+              <h3>Landing Page</h3>
+              <p>Fast, SEO-friendly landing page with semantic HTML and OpenGraph tags.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span></div>
+              <div class="links">
+                <a href="https://github.com/yourusername/landing-page" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="project-card" data-category="python" tabindex="0" aria-label="Data cleaner project">
+            <img src="assets/projects/dataclean.jpg" alt="Data cleaning illustration" />
+            <div class="project-body">
+              <h3>Data Cleaner</h3>
+              <p>CLI tool to normalize CSV data and generate quick summary stats.</p>
+              <div class="tags"><span>Python</span></div>
+              <div class="links">
+                <a href="https://github.com/yourusername/data-cleaner" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Modal for project details -->
+      <dialog id="projectModal" class="modal" aria-labelledby="modalTitle">
+        <form method="dialog">
+          <button class="modal__close" aria-label="Close modal">×</button>
+        </form>
+        <div class="modal__content">
+          <img id="modalImg" src="" alt="" />
+          <div class="modal__body">
+            <h3 id="modalTitle">Project Title</h3>
+            <p id="modalDesc">Project description goes here.</p>
+            <div class="tags" id="modalTags"></div>
+            <div class="links" id="modalLinks"></div>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section testimonials" aria-labelledby="testimonialsHeading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="testimonialsHeading" class="section-title">Testimonials</h2>
+          <p class="section-subtitle">What clients and teammates say.</p>
+        </div>
+
+        <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Testimonials">
+          <button class="carousel__btn prev" aria-label="Previous">‹</button>
+          <ul class="carousel__track" id="testimonialTrack">
+            <li class="carousel__slide">
+              <blockquote>
+                “Sachin delivered our website ahead of schedule and it looks fantastic on mobile.”
+                <footer>— Priya, Small Business Owner</footer>
+              </blockquote>
+            </li>
+            <li class="carousel__slide">
+              <blockquote>
+                “Clean code, great communication, and thoughtful UI decisions. Highly recommended.”
+                <footer>— Naveen, Product Manager</footer>
+              </blockquote>
+            </li>
+            <li class="carousel__slide">
+              <blockquote>
+                “Loved the accessibility touches—our users immediately noticed the difference.”
+                <footer>— Aisha, Accessibility Advocate</footer>
+              </blockquote>
+            </li>
+          </ul>
+          <button class="carousel__btn next" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" aria-labelledby="contactHeading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="contactHeading" class="section-title">Contact</h2>
+          <p class="section-subtitle">Have a project in mind? Let’s build it.</p>
+        </div>
+        <div class="contact__grid">
+          <form id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+              <small class="error" data-for="name"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              <small class="error" data-for="email"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+              <small class="error" data-for="message"></small>
+            </div>
+            <button class="btn primary" type="submit">Send Message</button>
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact__aside">
+            <h3>Reach me</h3>
+            <ul class="list">
+              <li>Email: <a href="mailto:sachin@example.com">sachin@example.com</a></li>
+              <li>Phone: <a href="tel:+919876543210">+91 98765 43210</a></li>
+              <li>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></li>
+              <li>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <p>© <span id="year"></span> Sachin. All rights reserved.</p>
+      <a href="#home" class="link">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+                  </html>
